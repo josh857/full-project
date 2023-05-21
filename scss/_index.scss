@@ -1,0 +1,39 @@
+@import './page1';
+@import './page2';
+@import './page3';
+@import './page4';
+@import './page5';
+
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-8{
+    margin-bottom: 16px;
+}
+.m-16{
+    margin: 16px;
+}
+h2{
+    font-size: 30px;
+}
+
+.lh{
+    line-height: 1.5;
+}
+
+.col-black{
+    color: black;
+}
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container{
+    padding-bottom: 30px;
+    margin: 0 auto;
+    max-width: 1920px;  
+    background-color: black;
+    color: white;
+}
+
+

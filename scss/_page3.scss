@@ -1,0 +1,110 @@
+.dnn{
+    display: none;
+}
+.navbar{
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.nav-top{
+    margin: 0  auto ;
+    max-width: 100%;
+    h1{
+        margin-left: 20px;
+        margin-top: 110px;
+        margin-bottom: 40px;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .tag{
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        img{
+            width: 180px;
+        }
+    }
+}
+.navbar-content{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-card{
+    padding: 30px;
+    margin-top: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width:28%;
+    border: 1px white solid;
+    border-radius: 10px;
+    background-color: rgb(37, 30, 30);
+    >img{
+      margin-bottom: 20px;  
+    }
+    p{  
+        height: 215PX;
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+.card-info{
+     height:70px;
+    display: flex;
+    justify-content: left;
+    margin-top: 90px;
+    img{
+        max-width: 70px;
+    }
+    h3{
+        margin:8px;    
+    }
+}
+
+@media(max-width:400px){
+    .dn{
+        display: none;
+    }
+    .navbar{
+        max-width: 100%;
+        .nav-top{
+            h1{
+                margin-right: 10px;
+                font-size: 25px;
+            }
+            .tag{
+                img{
+                   width: 35px;
+                }
+            }
+        }
+    }
+   .navbar-content{
+    
+    flex-direction: column;
+        .navbar-card{
+            width: 80%;
+            padding: 7%;
+            height: 320px;
+        }
+        .select-db{
+            display: flex;
+            justify-content: center;
+            li{
+                margin-left: 10px;
+                font-size: 30px;
+                color: gray;
+                &:hover{
+                    color: white;
+                    font-size: 36px;
+                }
+            }
+        }
+   }
+   .card-info{
+    margin-top: -1px;
+   }
+}
+
