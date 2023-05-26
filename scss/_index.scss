@@ -24,14 +24,15 @@ h2{
 .col-black{
     color: black;
 }
+body{
+    max-width: 100%;
+}
 main{
-    max-width: 1920px;
-    margin: 0 auto;
+    max-width: 100%;
 }
 .container{
     padding-bottom: 30px;
-    margin: 0 auto;
-    max-width: 1920px;  
+    
     background-color: black;
     color: white;
 }

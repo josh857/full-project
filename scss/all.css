@@ -52,6 +52,10 @@ table {
   border-spacing: 0;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .top {
   max-width: 70%;
   margin: 0 auto;
@@ -285,9 +289,9 @@ table {
     flex-direction: column;
   }
   .navbar-content .navbar-card {
-    width: 80%;
+    width: 95%;
     padding: 7%;
-    height: 320px;
+    height: 350px;
   }
   .navbar-content .select-db {
     display: flex;
@@ -346,6 +350,7 @@ table {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .content .content-bar > a {
   color: black;
@@ -474,6 +479,7 @@ table {
   .content .content-bar .list {
     width: 300px;
     justify-content: center;
+    overflow: hidden;
   }
   .content .content-bar .list a {
     border-color: white;
@@ -489,6 +495,9 @@ table {
   }
   .content .content-card .card {
     max-width: 100%;
+  }
+  .content .content-card .card .card-title {
+    height: 170px;
   }
   .pagebar {
     margin-left: 60px;
@@ -643,14 +652,15 @@ h2 {
 }
 
 body {
-  max-width: 1920px;
-  margin: 0 auto;
+  max-width: 100%;
+}
+
+main {
+  max-width: 100%;
 }
 
 .container {
   padding-bottom: 30px;
-  margin: 0 auto;
-  max-width: 1920px;
   background-color: black;
   color: white;
 }/*# sourceMappingURL=all.css.map */

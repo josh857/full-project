@@ -38,6 +38,7 @@
         max-width: 100%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         >a{
             color: black;
             box-sizing: border-box;
@@ -49,6 +50,7 @@
                 width: 110px;
                 border-radius: 10px;
                 font-weight: bolder;
+            
         }
         .list{
             display: flex;
@@ -170,6 +172,7 @@
           .list{
             width: 300px;
             justify-content: center;
+            overflow: hidden;
             a{
                 border-color:white;
                 width: 80px;
@@ -185,7 +188,11 @@
         justify-content: center;
         .card{
            max-width: 100%;
+           .card-title{
+            height: 170px;
         }
+        }
+        
     }  
     }
     .pagebar{
