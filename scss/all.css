@@ -460,9 +460,9 @@ table {
 .content .content-bar .list {
   display: flex;
   justify-content: space-around;
-  width: 600px;
 }
 .content .content-bar .list a {
+  margin: 10px;
   box-sizing: border-box;
   display: block;
   padding: 12px;
@@ -571,13 +571,13 @@ table {
     display: block;
   }
   .content .content-bar .list {
-    margin-left: 95px;
-    max-width: 300px;
+    max-width: 500px;
     justify-content: center;
+    overflow: hidden;
   }
   .content .content-bar .list a {
     border-color: white;
-    width: 80px;
+    width: 70px;
     font-size: 14px;
   }
   .content .content-bar .list a:hover {
@@ -621,14 +621,13 @@ table {
   }
   .content .content-bar .list {
     margin-left: -35px;
-    max-width: 350px;
     justify-content: center;
     overflow: hidden;
   }
   .content .content-bar .list a {
     border-color: white;
-    width: 80px;
-    font-size: 14px;
+    width: 50px;
+    font-size: 12px;
   }
   .content .content-bar .list a:hover {
     color: black;
