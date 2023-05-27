@@ -59,6 +59,35 @@
    }
 }
 
+@media(max-width:600px){
+    .top{
+        max-width: 100%;
+        .title{
+            img{
+                max-width: 150px;
+            }
+            ul{
+                img{
+                    display: block;
+                    margin-left: 40px;
+                }
+                a{
+                    display: none;
+                }
+            }
+        }
+        h1{
+            font-size: 30px;
+        }
+        .way{
+            img{
+                width: 125px;
+                margin-top: 60px;
+            }
+        }
+    
+    }
+}
 @media(max-width:400px){
     .top{
         max-width: 100%;

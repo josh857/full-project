@@ -115,6 +115,28 @@ table {
   width: 180px;
 }
 
+@media (max-width: 600px) {
+  .top {
+    max-width: 100%;
+  }
+  .top .title img {
+    max-width: 150px;
+  }
+  .top .title ul img {
+    display: block;
+    margin-left: 40px;
+  }
+  .top .title ul a {
+    display: none;
+  }
+  .top h1 {
+    font-size: 30px;
+  }
+  .top .way img {
+    width: 125px;
+    margin-top: 60px;
+  }
+}
 @media (max-width: 400px) {
   .top {
     max-width: 100%;
@@ -149,10 +171,11 @@ table {
   margin-bottom: 50px;
 }
 .bar .title h2 {
-  font-size: 30px;
+  width: 36%;
+  font-size: 23px;
 }
 .bar .title p {
-  font-size: 50px;
+  font-size: 34px;
 }
 .bar .sidebar {
   max-width: 100%;
@@ -173,6 +196,34 @@ table {
   width: 60px;
 }
 
+@media (max-width: 600px) {
+  .bar {
+    max-width: 100%;
+  }
+  .bar .title {
+    flex-direction: column;
+  }
+  .bar .title h2 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+  .bar .title p {
+    font-size: 37px;
+  }
+  .bar .title p .br {
+    display: none;
+  }
+  .bar .sidebar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bar .sidebar .sidebar-card {
+    max-width: 90%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 400px) {
   .bar {
     max-width: 100%;
@@ -229,7 +280,7 @@ table {
   justify-content: space-around;
 }
 .nav-top .tag img {
-  width: 180px;
+  width: 120px;
 }
 
 .navbar-content {
@@ -239,7 +290,10 @@ table {
 }
 
 .navbar-card {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
   margin-top: 150px;
   margin-left: 10px;
   margin-right: 10px;
@@ -248,29 +302,64 @@ table {
   border-radius: 10px;
   background-color: rgb(37, 30, 30);
 }
-.navbar-card > img {
-  margin-bottom: 20px;
+.navbar-card .images {
+  margin-bottom: 10px;
 }
 .navbar-card p {
-  height: 215PX;
+  display: block;
   max-width: 100%;
   font-size: 18px;
   line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 3;
 }
 
 .card-info {
-  height: 70px;
   display: flex;
   justify-content: left;
-  margin-top: 90px;
-}
-.card-info img {
-  max-width: 70px;
 }
 .card-info h3 {
   margin: 8px;
 }
 
+@media (max-width: 600px) {
+  .dn {
+    display: none;
+  }
+  .navbar {
+    max-width: 100%;
+  }
+  .navbar .nav-top h1 {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  .navbar .nav-top .tag img {
+    width: 35px;
+  }
+  .navbar-content {
+    flex-direction: column;
+  }
+  .navbar-content .navbar-card {
+    width: 95%;
+    padding: 2%;
+  }
+  .navbar-content .select-db {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-content .select-db li {
+    margin-left: 10px;
+    font-size: 30px;
+    color: gray;
+  }
+  .navbar-content .select-db li:hover {
+    color: white;
+    font-size: 36px;
+  }
+  .card-info {
+    margin-top: -1px;
+  }
+}
 @media (max-width: 400px) {
   .dn {
     display: none;
@@ -290,7 +379,7 @@ table {
   }
   .navbar-content .navbar-card {
     width: 95%;
-    padding: 7%;
+    padding: 4%;
     height: 350px;
   }
   .navbar-content .select-db {
@@ -312,6 +401,10 @@ table {
 }
 .db {
   display: none;
+}
+
+.col-black {
+  color: black;
 }
 
 .content {
@@ -393,6 +486,9 @@ table {
   flex-wrap: wrap;
 }
 .content .content-card .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   overflow: hidden;
   border: rgba(7, 7, 7, 0.2) solid 1px;
   margin: 10px;
@@ -403,12 +499,10 @@ table {
   max-width: 100%;
 }
 .content .content-card .card .card-title {
+  flex-grow: 2;
   max-width: 100%;
-  display: flex;
-  flex-direction: column;
   border-bottom: rgba(7, 7, 7, 0.2) solid 1px;
   padding: 20px;
-  height: 120px;
 }
 .content .content-card .card .card-title h2 {
   font-size: 20px;
@@ -462,6 +556,55 @@ table {
   color: white;
 }
 
+@media (max-width: 600px) {
+  .dn {
+    display: none !important;
+  }
+  .content .content-content {
+    max-width: 100%;
+  }
+  .content .content-content h1 {
+    font-size: 31px;
+    font-weight: bolder;
+  }
+  .content .content-content .content-new-bar {
+    display: block;
+  }
+  .content .content-bar .list {
+    margin-left: 95px;
+    max-width: 300px;
+    justify-content: center;
+  }
+  .content .content-bar .list a {
+    border-color: white;
+    width: 80px;
+    font-size: 14px;
+  }
+  .content .content-bar .list a:hover {
+    color: black;
+  }
+  .content .content-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .content-card .card {
+    max-width: 100%;
+  }
+  .content .content-card .card > img {
+    width: 500px;
+  }
+  .pagebar {
+    margin-left: 60px;
+  }
+  .pagebar .dn {
+    display: none;
+  }
+  .pagebar .db {
+    display: inline-block;
+    margin-left: -40px;
+    margin-top: 10px;
+  }
+}
 @media (max-width: 400px) {
   .dn {
     display: none !important;
@@ -477,7 +620,8 @@ table {
     display: block;
   }
   .content .content-bar .list {
-    width: 300px;
+    margin-left: -35px;
+    max-width: 350px;
     justify-content: center;
     overflow: hidden;
   }
@@ -497,7 +641,8 @@ table {
     max-width: 100%;
   }
   .content .content-card .card .card-title {
-    height: 170px;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .pagebar {
     margin-left: 60px;
@@ -643,24 +788,12 @@ h2 {
   font-size: 30px;
 }
 
-.lh {
-  line-height: 1.5;
-}
-
-.col-black {
-  color: black;
-}
-
 body {
-  max-width: 100%;
-}
-
-main {
-  max-width: 100%;
+  background-color: black;
 }
 
 .container {
-  padding-bottom: 30px;
-  background-color: black;
+  max-width: 1296px;
+  margin: 0 auto;
   color: white;
 }/*# sourceMappingURL=all.css.map */

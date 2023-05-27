@@ -1,6 +1,9 @@
 .db{
     display: none;
 }
+.col-black{
+    color: black;
+}
 .content{
     max-width: 100%;
     padding: 50px;
@@ -82,22 +85,22 @@
         max-width: 100%;
         flex-wrap: wrap;
         .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             overflow: hidden;
             border: rgb(7, 7, 7, 0.2) solid 1px;
             margin: 10px;
             max-width: 30%;
             border-radius: 15px;
-            
             img{
                 max-width: 100%;
             }
            .card-title{
+            flex-grow: 2;
             max-width: 100%;
-            display: flex;
-            flex-direction: column;
             border-bottom:rgb(7, 7, 7, 0.2) solid 1px;
             padding: 20px;
-            height: 120px;
                 h2{
                 font-size: 20px;
                 font-weight: bold;
@@ -152,6 +155,67 @@
     }
    }
 }
+@media (max-width:600px) {
+    .dn{
+        display: none !important;
+    }
+    
+    .content{
+    .content-content{
+        max-width: 100%;
+        h1{
+            font-size: 31px;
+            font-weight: bolder;
+        }
+        .content-new-bar{
+            display: block;
+        } 
+    }
+    .content-bar{
+          .list{
+            margin-left: 95px;
+            max-width: 300px;
+            justify-content: center;
+           
+            a{
+                border-color:white;
+                width: 80px;
+                font-size: 14px;
+                &:hover{
+                    color:black;
+                }
+            }
+          }
+    }
+    .content-card{
+        flex-direction: column;
+        justify-content: center;
+        .card{
+           max-width: 100%;
+           .card-title{
+            // height: 170px;
+        }
+        >img{
+            width: 500px;
+           }
+        }
+        
+    }  
+    }
+    .pagebar{
+        margin-left: 60px;
+        .dn{
+            display: none;
+        }
+        .db{
+            display: inline-block;
+            margin-left: -40px;
+            margin-top: 10px;
+        }
+    }
+}
+
+
 @media (max-width:400px) {
     .dn{
         display: none !important;
@@ -170,7 +234,8 @@
     }
     .content-bar{
           .list{
-            width: 300px;
+            margin-left: -35px;
+            max-width: 350px;
             justify-content: center;
             overflow: hidden;
             a{
@@ -186,10 +251,13 @@
     .content-card{
         flex-direction: column;
         justify-content: center;
+       
         .card{
            max-width: 100%;
            .card-title{
-            height: 170px;
+            flex-direction: column;
+            justify-content: space-between;
+            // height: 180px;
         }
         }
         
