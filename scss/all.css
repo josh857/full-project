@@ -86,7 +86,7 @@ table {
 .top .title ul img {
   display: none;
 }
-.top h1 {
+.top h2 {
   font-size: 120px;
   font-weight: bold;
   color: white;
@@ -96,7 +96,7 @@ table {
   margin-top: 30px;
   margin-left: 10px;
   text-align: center;
-  max-width: 90px;
+  max-width: 100px;
   padding: 15px;
   display: block;
   border: 1px white solid;
@@ -115,7 +115,7 @@ table {
   width: 180px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .top {
     max-width: 100%;
   }
@@ -129,7 +129,7 @@ table {
   .top .title ul a {
     display: none;
   }
-  .top h1 {
+  .top h2 {
     font-size: 30px;
   }
   .top .way img {
@@ -151,7 +151,7 @@ table {
   .top .title ul a {
     display: none;
   }
-  .top h1 {
+  .top h2 {
     font-size: 50px;
   }
   .top .way img {
@@ -171,7 +171,7 @@ table {
   margin-bottom: 50px;
 }
 .bar .title h2 {
-  width: 36%;
+  width: 70%;
   font-size: 23px;
 }
 .bar .title p {
@@ -196,7 +196,7 @@ table {
   width: 60px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .bar {
     max-width: 100%;
   }
@@ -322,7 +322,7 @@ table {
   margin: 8px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .dn {
     display: none;
   }
@@ -556,7 +556,7 @@ table {
   color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .dn {
     display: none !important;
   }
@@ -792,7 +792,6 @@ body {
 }
 
 .container {
-  max-width: 1296px;
   margin: 0 auto;
   color: white;
 }/*# sourceMappingURL=all.css.map */

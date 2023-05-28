@@ -29,7 +29,7 @@
             }
         }
     }
-   h1{
+   h2{
     font-size: 120px;
     font-weight: bold;
     color: white;
@@ -39,7 +39,7 @@
     margin-top: 30px;
     margin-left: 10px;
     text-align: center;
-    max-width: 90px;
+    max-width: 100px;
     padding: 15px;
     display: block;
     border: 1px white solid;
@@ -59,7 +59,7 @@
    }
 }
 
-@media(max-width:600px){
+@media(max-width:800px){
     .top{
         max-width: 100%;
         .title{
@@ -76,7 +76,7 @@
                 }
             }
         }
-        h1{
+        h2{
             font-size: 30px;
         }
         .way{
@@ -105,7 +105,7 @@
                 }
             }
         }
-        h1{
+        h2{
             font-size: 50px;
         }
         .way{
