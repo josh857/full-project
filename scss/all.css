@@ -56,12 +56,12 @@ table {
   box-sizing: border-box;
 }
 
-.top {
+.header {
   max-width: 70%;
   margin: 0 auto;
   border: 1px black solid;
 }
-.top .title {
+.header .header-title {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px white solid;
@@ -69,30 +69,35 @@ table {
   padding-bottom: 8px;
   margin-bottom: 30px;
 }
-.top .title > img {
-  width: 170px;
+.header .header-title img {
+  max-width: 150px;
 }
-.top .title ul {
+.header .header-title ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80px;
   font-size: 15px;
 }
-.top .title ul a {
+.header .header-title ul a {
   text-decoration: none;
   color: white;
 }
-.top .title ul img {
+.header .header-title ul a:hover {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+}
+.header .header-title ul img {
   display: none;
 }
-.top h2 {
-  font-size: 120px;
+.header h2 {
+  font-size: 82px;
   font-weight: bold;
   color: white;
   margin-bottom: 10px;
 }
-.top > a {
+.header > a {
   margin-top: 30px;
   margin-left: 10px;
   text-align: center;
@@ -104,85 +109,89 @@ table {
   text-decoration: none;
   color: white;
 }
-.top .way {
+.header > a:hover {
+  background-color: white;
+  color: black;
+}
+.header .way {
   display: flex;
   justify-content: right;
   margin-top: 90px;
   max-width: 100%;
   height: 180px;
 }
-.top .way img {
+.header .way > img {
   width: 180px;
 }
 
 @media (max-width: 800px) {
-  .top {
+  .header {
     max-width: 100%;
   }
-  .top .title img {
+  .header .header-title img {
     max-width: 150px;
   }
-  .top .title ul img {
+  .header .header-title ul img {
     display: block;
     margin-left: 40px;
   }
-  .top .title ul a {
+  .header .header-title ul a {
     display: none;
   }
-  .top h2 {
+  .header h2 {
     font-size: 30px;
   }
-  .top .way img {
+  .header .way img {
     width: 125px;
     margin-top: 60px;
   }
 }
 @media (max-width: 400px) {
-  .top {
+  .header {
     max-width: 100%;
   }
-  .top .title img {
+  .header .header-title img {
     max-width: 150px;
   }
-  .top .title ul img {
+  .header .header-title ul img {
     display: block;
     margin-left: 40px;
   }
-  .top .title ul a {
+  .header .header-title ul a {
     display: none;
   }
-  .top h2 {
+  .header h2 {
     font-size: 50px;
   }
-  .top .way img {
+  .header .way img {
     width: 125px;
     margin-top: 60px;
   }
 }
-.bar {
+.service {
   max-width: 70%;
   margin: 0 auto;
 }
-.bar .title {
+.service .service-title {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 90px;
   margin-bottom: 50px;
 }
-.bar .title h2 {
+.service .service-title h2 {
   width: 70%;
   font-size: 23px;
 }
-.bar .title p {
+.service .service-title p {
   font-size: 34px;
 }
-.bar .sidebar {
+.service .service-content {
   max-width: 100%;
   display: flex;
   justify-content: space-around;
 }
-.bar .sidebar .sidebar-card {
+.service .service-content .service-card {
   height: 280px;
   padding: 10px;
   border: 1px solid rgba(241, 233, 233, 0.2);
@@ -192,61 +201,61 @@ table {
   flex-direction: column;
   justify-content: center;
 }
-.bar .sidebar .sidebar-card img {
+.service .service-content .service-card img {
   width: 60px;
 }
 
 @media (max-width: 800px) {
-  .bar {
+  .service {
     max-width: 100%;
   }
-  .bar .title {
+  .service .service-title {
     flex-direction: column;
   }
-  .bar .title h2 {
+  .service .service-title h2 {
     font-weight: bold;
     font-size: 22px;
     margin-bottom: 50px;
   }
-  .bar .title p {
+  .service .service-title p {
     font-size: 37px;
   }
-  .bar .title p .br {
+  .service .service-title p .br {
     display: none;
   }
-  .bar .sidebar {
+  .service .service-content {
     flex-direction: column;
     align-items: center;
   }
-  .bar .sidebar .sidebar-card {
+  .service .service-content .service-card {
     max-width: 90%;
     justify-content: space-around;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 400px) {
-  .bar {
+  .service {
     max-width: 100%;
   }
-  .bar .title {
+  .service .service-title {
     flex-direction: column;
   }
-  .bar .title h2 {
+  .service .service-title h2 {
     font-weight: bold;
     font-size: 22px;
     margin-bottom: 50px;
   }
-  .bar .title p {
+  .service .service-title p {
     font-size: 37px;
   }
-  .bar .title p .br {
+  .service .service-title p .br {
     display: none;
   }
-  .bar .sidebar {
+  .service .service-content {
     flex-direction: column;
     align-items: center;
   }
-  .bar .sidebar .sidebar-card {
+  .service .service-content .service-card {
     max-width: 90%;
     justify-content: space-around;
     margin-bottom: 10px;
@@ -262,24 +271,24 @@ table {
   margin-bottom: 100px;
 }
 
-.nav-top {
+.navbar-header {
   margin: 0 auto;
   max-width: 100%;
 }
-.nav-top h1 {
+.navbar-header h1 {
   margin-left: 20px;
   margin-top: 110px;
   margin-bottom: 40px;
   font-size: 30px;
   font-weight: bolder;
 }
-.nav-top .tag {
+.navbar-header .tag {
   display: flex;
   max-width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.nav-top .tag img {
+.navbar-header .tag img {
   width: 120px;
 }
 
@@ -445,7 +454,7 @@ table {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.content .content-bar > a {
+.content .content-bar button {
   color: black;
   box-sizing: border-box;
   display: block;
@@ -481,7 +490,7 @@ table {
   margin-bottom: 30px;
   margin-top: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 100%;
   flex-wrap: wrap;
 }
@@ -591,7 +600,7 @@ table {
     max-width: 100%;
   }
   .content .content-card .card > img {
-    width: 500px;
+    width: 660px;
   }
   .pagebar {
     margin-left: 60px;
@@ -666,8 +675,8 @@ table {
   flex-direction: column;
   align-items: center;
 }
-.footer-title h1 {
-  font-size: 80px;
+.footer-title h2 {
+  font-size: 70px;
   font-weight: bold;
 }
 .footer-title a {
@@ -680,6 +689,10 @@ table {
   border-radius: 10px;
   color: white;
   margin-top: 30px;
+}
+.footer-title a:hover {
+  background-color: white;
+  color: black;
 }
 .footer-title a img {
   width: 16px;
@@ -740,7 +753,7 @@ table {
     max-width: 70%;
     margin-left: 60px;
   }
-  .footer-title h1 {
+  .footer-title h2 {
     font-size: 36px;
   }
   .footer-title a {
@@ -781,10 +794,6 @@ table {
 
 .m-16 {
   margin: 16px;
-}
-
-h2 {
-  font-size: 30px;
 }
 
 body {

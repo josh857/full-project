@@ -1,8 +1,8 @@
-.bar{
+.service{
     max-width: 70%;
     margin: 0 auto;
 
-    .title{
+    .service-title{
         max-width: 100%;
         display: flex;
         justify-content: space-between;
@@ -16,11 +16,11 @@
             font-size: 34px;
         }
     }
-    .sidebar{
+    .service-content{
         max-width: 100%;
         display: flex;
         justify-content: space-around;
-        .sidebar-card{
+        .service-card{
             height: 280px;
             padding: 10px;
             border: 1px solid rgb(241, 233, 233 ,0.2);
@@ -56,9 +56,9 @@
 // }
 
 @media (max-width:800px) {
-    .bar{
+    .service{
      max-width: 100%;
-     .title{
+     .service-title{
          flex-direction: column;
          h2{
              font-weight: bold;
@@ -72,10 +72,10 @@
              }
          }
      }
-     .sidebar{
+     .service-content{
          flex-direction: column;
          align-items: center;
-         .sidebar-card{
+         .service-card{
             max-width: 90%;
             justify-content: space-around;
             margin-bottom: 10px;
@@ -86,9 +86,9 @@
  }
 
     @media (max-width:400px) {
-       .bar{
+       .service{
         max-width: 100%;
-        .title{
+        .service-title{
             flex-direction: column;
             h2{
                 font-weight: bold;
@@ -102,10 +102,10 @@
                 }
             }
         }
-        .sidebar{
+        .service-content{
             flex-direction: column;
             align-items: center;
-            .sidebar-card{
+            .service-card{
                max-width: 90%;
                justify-content: space-around;
                margin-bottom: 10px;
