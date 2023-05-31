@@ -1,15 +1,16 @@
 .dnn{
     display: none;
 }
-.navbar{
-    max-width: 70%;
+.comment{
+    max-width: 80%;
     margin: 0 auto;
     margin-bottom: 100px;
+    color: white;
 }
-.navbar-header{
+.comment-header{
     margin: 0  auto ;
     max-width: 100%;
-    h1{
+    h2{
         margin-left: 20px;
         margin-top: 110px;
         margin-bottom: 40px;
@@ -26,12 +27,12 @@
         }
     }
 }
-.navbar-content{
+.comment-content{
     max-width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.navbar-card{
+.comment-card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,7 +40,7 @@
     margin-top: 150px;
     margin-left: 10px;
     margin-right: 10px;
-    width:28%;
+    width:35%;
     border: 1px white solid;
     border-radius: 10px;
     background-color: rgb(37, 30, 30);
@@ -66,10 +67,10 @@
     .dn{
         display: none;
     }
-    .navbar{
+    .comment{
         max-width: 100%;
-        .navbar-header{
-            h1{
+        .comment-header{
+            h2{
                 margin-right: 10px;
                 font-size: 25px;
             }
@@ -80,10 +81,10 @@
             }
         }  
 }
-   .navbar-content{
+   .comment-content{
 
     flex-direction: column;
-        .navbar-card{
+        .comment-card{
             width: 95%;
             padding: 2%;
         //    max-height: 350px;
@@ -111,10 +112,10 @@
     .dn{
         display: none;
     }
-    .navbar{
+    .comment{
         max-width: 100%;
-        .navbar-header{
-            h1{
+        .comment-header{
+            h2{
                 margin-right: 10px;
                 font-size: 25px;
             }
@@ -125,9 +126,9 @@
             }
         }
     }
-   .navbar-content{
+   .comment-content{
     flex-direction: column;
-        .navbar-card{
+        .comment-card{
             width: 95%;
             padding: 4%;
             height: 350px;

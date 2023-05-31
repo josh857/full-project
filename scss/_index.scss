@@ -1,8 +1,8 @@
-@import './page1';
-@import './page2';
-@import './page3';
-@import './page4';
-@import './page5';
+@import './header';
+@import './service';
+@import './comment';
+@import './content';
+@import './footer';
 
 .mb-16{
     margin-bottom: 16px;
@@ -19,7 +19,7 @@ body{
 }
 .container {
     margin: 0 auto;
-    color: white;
+    max-width:1296px;
   } 
   
   
