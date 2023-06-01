@@ -63,6 +63,7 @@
          flex-direction: column;
          align-items: center;
          .service-card{
+            padding: 50px;
             max-width: 60%;
             justify-content: space-around;
             margin-bottom: 10px;
@@ -73,7 +74,7 @@
 
  }
 
-    @media (max-width:400px) {
+    @media (max-width:767px) {
        .service{
         max-width: 100%;
         .service-title{
@@ -94,7 +95,7 @@
             flex-direction: column;
             align-items: center;
             .service-card{
-               max-width: 90%;
+               max-width: 80%;
                justify-content: space-around;
                margin-bottom: 10px;
             }
