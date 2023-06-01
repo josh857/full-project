@@ -57,7 +57,7 @@ table {
 }
 
 .header {
-  max-width: 80%;
+  max-width: 1296px;
   margin: 0 auto;
   border: 1px black solid;
 }
@@ -124,7 +124,7 @@ table {
   width: 180px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .header {
     max-width: 100%;
   }
@@ -139,10 +139,10 @@ table {
     display: none;
   }
   .header h2 {
-    font-size: 30px;
+    font-size: 60px;
   }
   .header .way img {
-    width: 125px;
+    width: 150px;
     margin-top: 60px;
   }
 }
@@ -169,7 +169,7 @@ table {
   }
 }
 .service {
-  max-width: 80%;
+  max-width: 1296px;
   margin: 0 auto;
   color: white;
 }
@@ -191,18 +191,26 @@ table {
   max-width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 .service .service-content .service-card {
-  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 10px;
   border: 1px solid rgba(241, 233, 233, 0.2);
   border-radius: 10px;
-  max-width: 30%;
+  max-width: 416px;
 }
 .service .service-content .service-card img {
   width: 60px;
 }
+.service .service-content .service-card p {
+  line-height: 1.5;
+}
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .service {
     max-width: 100%;
   }
@@ -263,7 +271,7 @@ table {
 }
 
 .comment {
-  max-width: 80%;
+  max-width: 1296px;
   margin: 0 auto;
   margin-bottom: 100px;
   color: white;
@@ -287,7 +295,7 @@ table {
   justify-content: space-around;
 }
 .comment-header .tag img {
-  width: 120px;
+  width: 150px;
 }
 
 .comment-content {
@@ -325,11 +333,11 @@ table {
   display: flex;
   justify-content: left;
 }
-.card-info h3 {
+.card-info h2 {
   margin: 8px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .dn {
     display: none;
   }
@@ -340,8 +348,12 @@ table {
     margin-right: 10px;
     font-size: 25px;
   }
+  .comment .comment-header .tag {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
   .comment .comment-header .tag img {
-    max-width: 100px;
+    max-width: 130px;
   }
   .comment-content {
     flex-direction: column;
@@ -377,9 +389,6 @@ table {
   .comment .comment-header h2 {
     margin-right: 10px;
     font-size: 25px;
-  }
-  .comment .comment-header .tag img {
-    width: 50px;
   }
   .comment-content {
     flex-direction: column;
@@ -418,7 +427,7 @@ table {
   background-color: white;
 }
 .content .content-content {
-  max-width: 100%;
+  max-width: 1296px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -442,13 +451,13 @@ table {
 .content .content-content .content-new-bar {
   display: none;
 }
-.content .content-bar {
+.content .content-navbar {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.content .content-bar button {
+.content .content-navbar button {
   color: black;
   box-sizing: border-box;
   display: block;
@@ -460,11 +469,11 @@ table {
   border-radius: 10px;
   font-weight: bolder;
 }
-.content .content-bar .list {
+.content .content-navbar .content-navbar-list {
   display: flex;
   justify-content: space-around;
 }
-.content .content-bar .list a {
+.content .content-navbar .content-navbar-list a {
   margin: 10px;
   box-sizing: border-box;
   display: block;
@@ -476,11 +485,12 @@ table {
   color: gray;
   font-weight: bolder;
 }
-.content .content-bar .list a:hover {
+.content .content-navbar .content-navbar-list a:hover {
   background-color: rgb(203, 196, 196);
   color: black;
 }
-.content .content-card {
+
+.content-card {
   margin-bottom: 30px;
   margin-top: 100px;
   display: flex;
@@ -488,40 +498,40 @@ table {
   max-width: 100%;
   flex-wrap: wrap;
 }
-.content .content-card .card {
+.content-card .card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   overflow: hidden;
   border: rgba(7, 7, 7, 0.2) solid 1px;
-  margin: 10px;
+  margin-bottom: 10px;
   max-width: 31%;
   border-radius: 15px;
 }
-.content .content-card .card img {
+.content-card .card img {
   max-width: 100%;
 }
-.content .content-card .card .card-title {
+.content-card .card .card-title {
   flex-grow: 1.5;
   max-width: 100%;
   border-bottom: rgba(7, 7, 7, 0.2) solid 1px;
   padding: 10px;
 }
-.content .content-card .card .card-title h2 {
+.content-card .card .card-title h2 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.content .content-card .card .card-title p {
+.content-card .card .card-title p {
   line-height: 1.3;
 }
-.content .content-card .card .card-content {
+.content-card .card .card-content {
   border-bottom: rgba(7, 7, 7, 0.2) solid 1px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
-.content .content-card .card .card-foot {
+.content-card .card .card-foot {
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -556,7 +566,7 @@ table {
   color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .dn {
     display: none !important;
   }
@@ -570,17 +580,19 @@ table {
   .content .content-content .content-new-bar {
     display: block;
   }
-  .content .content-bar .list {
-    max-width: 500px;
+  .content .content-navbar .content-navbar-list {
+    max-width: 850px;
     justify-content: center;
     overflow: hidden;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
   }
-  .content .content-bar .list a {
+  .content .content-navbar .content-navbar-list a {
     border-color: white;
     width: 70px;
     font-size: 14px;
   }
-  .content .content-bar .list a:hover {
+  .content .content-navbar .content-navbar-list a:hover {
     color: black;
   }
   .content .content-card {
@@ -591,10 +603,10 @@ table {
     max-width: 100%;
   }
   .content .content-card .card > img {
-    width: 660px;
+    width: 900px;
   }
   .pagebar {
-    margin-left: 60px;
+    display: flex;
   }
   .pagebar .dn {
     display: none;
@@ -619,17 +631,17 @@ table {
   .content .content-content .content-new-bar {
     display: block;
   }
-  .content .content-bar .list {
+  .content .content-navbar .content-navbar-list {
     margin-left: -35px;
     justify-content: center;
     overflow: hidden;
   }
-  .content .content-bar .list a {
+  .content .content-navbar .content-navbar-list a {
     border-color: white;
     width: 50px;
     font-size: 12px;
   }
-  .content .content-bar .list a:hover {
+  .content .content-navbar .content-navbar-list a:hover {
     color: black;
   }
   .content .content-card {
@@ -643,9 +655,6 @@ table {
     flex-direction: column;
     justify-content: space-between;
   }
-  .pagebar {
-    margin-left: 60px;
-  }
   .pagebar .dn {
     display: none;
   }
@@ -656,7 +665,7 @@ table {
   }
 }
 .footer {
-  max-width: 80%;
+  max-width: 1296px;
   margin: 0 auto;
   color: white;
 }
@@ -737,16 +746,19 @@ table {
   text-decoration: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 992px) {
   .footer {
     max-width: 100%;
   }
   .footer-title {
-    max-width: 70%;
-    margin-left: 60px;
+    max-width: 992px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
   }
   .footer-title h2 {
-    font-size: 36px;
+    margin: 15px;
+    text-align: center;
+    font-size: 48px;
   }
   .footer-title a {
     width: 150px;
@@ -794,5 +806,5 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1296px;
+  max-width: 1920px;
 }/*# sourceMappingURL=all.css.map */
