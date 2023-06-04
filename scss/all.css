@@ -76,10 +76,11 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80px;
+  max-width: 150px;
   font-size: 15px;
 }
 .header .header-title ul a {
+  margin-right: 5px;
   text-decoration: none;
   color: white;
 }
@@ -89,6 +90,9 @@ table {
   font-size: 20px;
 }
 .header .header-title ul img {
+  display: none;
+}
+.header .header-title .menu {
   display: none;
 }
 .header h2 {
@@ -137,6 +141,9 @@ table {
   }
   .header .header-title ul a {
     display: none;
+  }
+  .header .header-title .menu {
+    display: block;
   }
   .header h2 {
     font-size: 60px;
@@ -190,7 +197,7 @@ table {
 .service .service-content {
   max-width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 .service .service-content .service-card {
@@ -198,13 +205,12 @@ table {
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
-  margin-right: 10px;
   border: 1px solid rgba(241, 233, 233, 0.2);
   border-radius: 10px;
-  max-width: 416px;
+  max-width: 32%;
 }
 .service .service-content .service-card img {
-  width: 60px;
+  max-width: 60px;
 }
 .service .service-content .service-card p {
   line-height: 1.5;
@@ -267,7 +273,7 @@ table {
     margin-bottom: 10px;
   }
 }
-.dnn {
+.dn {
   display: none;
 }
 
@@ -292,10 +298,10 @@ table {
 .comment-header .tag {
   display: flex;
   max-width: 100%;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 .comment-header .tag img {
+  display: block;
   width: 150px;
 }
 
@@ -306,28 +312,31 @@ table {
 }
 
 .comment-card {
+  max-width: 32%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.comment-card .comment-card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
-  margin-top: 150px;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 35%;
+  padding: 10px;
+  max-width: 100%;
   border: 1px white solid;
   border-radius: 10px;
   background-color: rgb(37, 30, 30);
 }
-.comment-card .images {
+.comment-card .comment-card-content .images {
   margin-bottom: 10px;
 }
-.comment-card p {
+.comment-card .comment-card-content p {
   display: block;
   max-width: 100%;
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
-  flex-grow: 3;
+  flex-grow: 2;
 }
 
 .card-info {
@@ -336,6 +345,10 @@ table {
 }
 .card-info h2 {
   margin: 8px;
+}
+
+.select-db {
+  display: none;
 }
 
 @media (max-width: 992px) {
@@ -350,7 +363,6 @@ table {
     font-size: 25px;
   }
   .comment .comment-header .tag {
-    flex-wrap: nowrap;
     overflow: hidden;
   }
   .comment .comment-header .tag img {
@@ -358,10 +370,13 @@ table {
   }
   .comment-content {
     flex-direction: column;
+    align-items: center;
   }
   .comment-content .comment-card {
-    width: 95%;
-    padding: 2%;
+    max-width: 80%;
+  }
+  .comment-content .comment-card .comment-card-content {
+    max-width: 100%;
   }
   .comment-content .select-db {
     display: flex;
@@ -395,9 +410,8 @@ table {
     flex-direction: column;
   }
   .comment-content .comment-card {
-    width: 95%;
+    width: 100%;
     padding: 4%;
-    height: 350px;
   }
   .comment-content .select-db {
     display: flex;
@@ -459,6 +473,7 @@ table {
   flex-wrap: wrap;
 }
 .content .content-navbar button {
+  background-color: white;
   color: black;
   box-sizing: border-box;
   display: block;
@@ -469,6 +484,11 @@ table {
   width: 110px;
   border-radius: 10px;
   font-weight: bolder;
+}
+.content .content-navbar button:hover {
+  animation: swing 0.5s 1;
+  transform: scale(1.2);
+  border-radius: 50%;
 }
 .content .content-navbar .content-navbar-list {
   display: flex;
@@ -509,6 +529,9 @@ table {
   max-width: 31%;
   border-radius: 15px;
 }
+.content-card .card:hover {
+  animation: swing 0.5s 1;
+}
 .content-card .card img {
   max-width: 100%;
 }
@@ -518,7 +541,7 @@ table {
   border-bottom: rgba(7, 7, 7, 0.2) solid 1px;
   padding: 10px;
 }
-.content-card .card .card-title h2 {
+.content-card .card .card-title h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;

@@ -41,6 +41,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         button{
+            background-color: white;
             color: black;
             box-sizing: border-box;
                 display: block;
@@ -51,7 +52,12 @@
                 width: 110px;
                 border-radius: 10px;
                 font-weight: bolder;
-            
+        
+            &:hover{
+                animation:swing 0.5s 1;
+                transform: scale(1.2);
+                border-radius: 50%;
+            }
         }
         .content-navbar-list{
             display: flex;
@@ -91,6 +97,9 @@
         margin-bottom: 10px;
         max-width: 31%;
         border-radius: 15px;
+        &:hover{
+            animation:swing 0.5s 1;
+        }
         img{
             max-width: 100%;
         }
@@ -99,7 +108,7 @@
         max-width: 100%;
         border-bottom:rgb(7, 7, 7, 0.2) solid 1px;
         padding: 10px;
-            h2{
+            h3{
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;

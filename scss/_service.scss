@@ -19,20 +19,18 @@
     .service-content{
         max-width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-bottom: 30px;
         .service-card{
             padding-top: 40px;
             padding-bottom: 40px;
             padding-left: 40px;
             padding-right: 40px;
-            margin-right: 10px;
             border: 1px solid rgb(241, 233, 233 ,0.2);
             border-radius: 10px;
-            max-width: 416px;
+            max-width: 32%;
             img{
-                
-                width: 60px;
+                max-width: 60px;
             }
             p{
                 line-height: 1.5;

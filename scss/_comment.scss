@@ -1,4 +1,4 @@
-.dnn{
+.dn{
     display: none;
 }
 .comment{
@@ -20,12 +20,14 @@
     .tag{
         display: flex;
         max-width: 100%;
-        flex-wrap: wrap;
         justify-content:space-around;
         img{
+            display: block;
            width: 150px;
         }
     }
+    
+    
 }
 .comment-content{
     max-width: 100%;
@@ -33,28 +35,33 @@
     justify-content: space-between;
 }
 .comment-card{
+    max-width: 32%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    .comment-card-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
-    margin-top: 150px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width:35%;
+    padding: 10px;
+    
+    max-width: 100%;
     border: 1px white solid;
     border-radius: 10px;
     background-color: rgb(37, 30, 30);
-    .images{
-        margin-bottom: 10px;
+        .images{
+            margin-bottom: 10px;
+        }
+        p{  
+            display: block;
+            max-width: 100%;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            flex-grow: 2;
+        }
     }
-    p{  
-        display: block;
-        max-width: 100%;
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        flex-grow: 3;
-    }
+   
 }
 .card-info{
     display: flex;
@@ -62,6 +69,9 @@
     h2{
         margin:8px;    
     }
+}
+.select-db{
+    display: none;
 }
 @media(max-width:992px){
     .dn{
@@ -75,7 +85,6 @@
                 font-size: 25px;
             }
             .tag{
-                flex-wrap: nowrap;
                 overflow: hidden;
                 img{
                    max-width: 130px ;
@@ -84,11 +93,13 @@
         }  
 }
    .comment-content{
-
     flex-direction: column;
+    align-items: center;
         .comment-card{
-            width: 95%;
-            padding: 2%;
+            max-width: 80%;
+           .comment-card-content{
+            max-width: 100%;
+           }
         //    max-height: 350px;
         }
         .select-db{
@@ -126,9 +137,9 @@
    .comment-content{
     flex-direction: column;
         .comment-card{
-            width: 95%;
+            width: 100%;
             padding: 4%;
-            height: 350px;
+            
         }
         .select-db{
             display: flex;
