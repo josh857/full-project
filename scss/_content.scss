@@ -88,20 +88,26 @@
     justify-content: space-between;
     max-width: 100%;
     flex-wrap: wrap;
+    
     .card{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         overflow: hidden;
         border: rgb(7, 7, 7, 0.2) solid 1px;
         margin-bottom: 10px;
         max-width: 31%;
         border-radius: 15px;
+        position: relative;
         &:hover{
-            animation:swing 0.5s 1;
+            >img{
+                position: relative;
+                width: 504px;
+                height: 378px;
+             }
         }
-        img{
-            max-width: 100%;
+        >img{
+          max-width: 100%;
         }
        .card-title{
         flex-grow: 1.5;

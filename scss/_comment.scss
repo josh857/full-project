@@ -18,12 +18,12 @@
         font-weight: bolder;
     }
     .tag{
+        overflow: hidden;
         display: flex;
         max-width: 100%;
         justify-content:space-around;
         img{
-            display: block;
-           width: 150px;
+           max-width: 140px;
         }
     }
     

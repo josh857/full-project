@@ -296,13 +296,13 @@ table {
   font-weight: bolder;
 }
 .comment-header .tag {
+  overflow: hidden;
   display: flex;
   max-width: 100%;
   justify-content: space-around;
 }
 .comment-header .tag img {
-  display: block;
-  width: 150px;
+  max-width: 140px;
 }
 
 .comment-content {
@@ -522,17 +522,20 @@ table {
 .content-card .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   overflow: hidden;
   border: rgba(7, 7, 7, 0.2) solid 1px;
   margin-bottom: 10px;
   max-width: 31%;
   border-radius: 15px;
+  position: relative;
 }
-.content-card .card:hover {
-  animation: swing 0.5s 1;
+.content-card .card:hover > img {
+  position: relative;
+  width: 504px;
+  height: 378px;
 }
-.content-card .card img {
+.content-card .card > img {
   max-width: 100%;
 }
 .content-card .card .card-title {
